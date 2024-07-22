@@ -65,6 +65,21 @@ public class TestMod implements ModInitializer {
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
 			entries.addAfter(Items.AMETHYST_SHARD, iteminit.POTASH);
 		});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+			entries.addAfter(Items.STONE_HOE, iteminit.COPPER_SHOVEL);
+		});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+			entries.addAfter(iteminit.COPPER_SHOVEL, iteminit.COPPER_PICKAXE);
+		});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+			entries.addAfter(iteminit.COPPER_PICKAXE, iteminit.COPPER_AXE);
+		});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+			entries.addAfter(iteminit.COPPER_AXE, iteminit.COPPER_HOE);
+		});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+			entries.addAfter(Items.STONE_SWORD, iteminit.COPPER_SWORD);
+		});
 		LOGGER.info("Loaded!");
 	}
 
