@@ -1,0 +1,20 @@
+{
+  "block.jakobitestmod.deepslate_potash_ore": "Deepslate Potash Ore",
+  "block.jakobitestmod.end_potash_ore": "End Potash Ore",
+  "block.jakobitestmod.nether_potash_ore": "Nether Potash Ore",
+  "block.jakobitestmod.polished_potash_block": "Polished Potash Block",
+  "block.jakobitestmod.potash_block": "Potash Block",
+  "block.jakobitestmod.potash_ore": "Potash Ore",
+  "block.jakobitestmod.silt": "Silt",
+  "block.jakobitestmod.silt_bricks": "Silt Bricks",
+  "item.jakobitestmod.copper_axe": "Copper Axe",
+  "item.jakobitestmod.copper_hoe": "Copper Hoe",
+  "item.jakobitestmod.copper_pickaxe": "Copper Pickaxe",
+  "item.jakobitestmod.copper_shovel": "Copper Shovel",
+  "item.jakobitestmod.copper_sword": "Copper Sword",
+  "item.jakobitestmod.potash": "Potash",
+  "item.jakobitestmod.rye_bread": "Rye Bread",
+  "item.jakobitestmod.silt_ball": "Silt Ball",
+  "item.jakobitestmod.silt_brick": "Silt Brick",
+  "itemGroup.jakobitestmod.test_mod_group": "Test Mod"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "E": {
+      "item": "minecraft:copper_ingot"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "EE",
+    " S",
+    " S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "jakobitestmod:copper_hoe"
+  }
+}

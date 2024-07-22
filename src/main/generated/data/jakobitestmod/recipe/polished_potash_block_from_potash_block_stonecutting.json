@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "jakobitestmod:potash_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "jakobitestmod:polished_potash_block"
+  }
+}

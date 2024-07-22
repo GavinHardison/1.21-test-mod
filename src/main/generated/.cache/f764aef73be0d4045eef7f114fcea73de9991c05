@@ -1,0 +1,6 @@
+// 1.21	2024-07-22T07:42:04.2278925	test mod/Tags for minecraft:block
+a0a3803233d084d10f09b2f509c8fd59a23b440e data\minecraft\tags\block\needs_stone_tool.json
+3a0e6e66553244a011bf31788db7ba0319e99237 data\minecraft\tags\block\mineable\shovel.json
+43a45a1abbda26eb85071635bb20e4db6d13fdab data\jakobitestmod\tags\block\copper.json
+811d8dfd4db73418b9ca803c55a575e5307282cc data\jakobitestmod\tags\block\incorrect_for_copper_tool.json
+6bb575f399a469da780bdb821de76cffed3d5566 data\minecraft\tags\block\mineable\pickaxe.json

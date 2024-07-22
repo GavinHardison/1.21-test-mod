@@ -1,0 +1,9 @@
+// 1.21	2024-07-22T07:42:04.2278925	test mod/Block Loot Tables
+b6d7811469f532b2886b328eee0841189812eb38 data\jakobitestmod\loot_table\blocks\potash_block.json
+a8d06f754ef00509c231e29fc6f134f7b6fbec1b data\jakobitestmod\loot_table\blocks\deepslate_potash_ore.json
+c6fcf21d5a4d01c2249b7ee73c9848f19436b494 data\jakobitestmod\loot_table\blocks\potash_ore.json
+f59c5772ffe1153f6553c66ddbb192dd8c1daf04 data\jakobitestmod\loot_table\blocks\nether_potash_ore.json
+546d9fc99a517c68d119689a79d0d51f2fcf3d46 data\jakobitestmod\loot_table\blocks\polished_potash_block.json
+dcc45b4d11a29bebf2d4e1f914138f3acc7fcc2d data\jakobitestmod\loot_table\blocks\end_potash_ore.json
+2ce9506558683dc510f6890d3b21a5dac9c06cb9 data\jakobitestmod\loot_table\blocks\silt_bricks.json
+1276ec18acdd1ac249f576c86dabe405c3ce3138 data\jakobitestmod\loot_table\blocks\silt.json
