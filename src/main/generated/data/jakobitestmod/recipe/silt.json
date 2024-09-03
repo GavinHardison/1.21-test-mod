@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "E": {
+    "C": {
       "item": "jakobitestmod:silt_ball"
     }
   },
   "pattern": [
-    "EE",
-    "EE"
+    "CC",
+    "CC"
   ],
   "result": {
     "count": 1,

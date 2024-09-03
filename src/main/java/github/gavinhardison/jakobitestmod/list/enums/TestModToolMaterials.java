@@ -9,11 +9,11 @@ import net.minecraft.registry.tag.TagKey;
 
 public enum TestModToolMaterials implements ToolMaterial {
     COPPER(
-            175,
+            125,
             8.0f,
             0.0f,
             TagList.Blocks.INCORRECT_FOR_COPPER_TOOL,
-            22,
+            10,
             Ingredient.ofItems(Items.COPPER_INGOT)
     );
     private final int durability;

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "jakobitestmod:ash_planks"
+    },
+    "C": {
+      "tag": "c:chains"
+    }
+  },
+  "pattern": [
+    "C C",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "jakobitestmod:ash_hanging_sign"
+  }
+}

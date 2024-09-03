@@ -4,16 +4,17 @@ import github.gavinhardison.jakobitestmod.TestMod;
 import github.gavinhardison.jakobitestmod.init.blockinit;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
+import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.util.math.noise.DoublePerlinNoiseSampler;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.stateprovider.NoiseBlockStateProvider;
 
 import java.util.List;
 
@@ -21,6 +22,8 @@ public class ConfiguredFeatureInit {
     public static final RegistryKey<ConfiguredFeature<?, ?>> POTASH_ORE_KEY = registerKey("potash_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_POTASH_ORE_KEY = registerKey("nether_potash_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> END_POTASH_ORE_KEY = registerKey("end_potash_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CARNATION_KEY = registerKey("carnation");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CARNATION_PATCH_KEY = registerKey("carnation_patch");
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneOreReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateOreReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -37,6 +40,17 @@ public class ConfiguredFeatureInit {
         register(context, POTASH_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPotashTargets, 9));
         register(context, NETHER_POTASH_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherPotashTargets, 9));
         register(context, END_POTASH_ORE_KEY, Feature.ORE, new OreFeatureConfig(endPotashTargets, 9));
+
+        RegistryEntryLookup<PlacedFeature> registryLookup = context.getRegistryLookup(RegistryKeys.PLACED_FEATURE);
+        register(context, CARNATION_KEY, Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(
+                BlockStateProvider.of(blockinit.CARNATION)));
+
+        register(context, CARNATION_PATCH_KEY, Feature.FLOWER,
+                new RandomPatchFeatureConfig(
+                        64,
+                        6,
+                        3,
+                        registryLookup.getOrThrow(PlacedFeatureInit.CARNATION_KEY)));
     }
     private static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, TestMod.id(name));

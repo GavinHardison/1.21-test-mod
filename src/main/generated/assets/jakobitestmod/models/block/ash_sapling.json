@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "jakobitestmod:block/ash_sapling"
+  }
+}

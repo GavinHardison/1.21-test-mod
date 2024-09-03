@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "E": {
+    "P": {
       "item": "jakobitestmod:potash"
     }
   },
   "pattern": [
-    "EEE",
-    "EEE",
-    "EEE"
+    "PPP",
+    "PPP",
+    "PPP"
   ],
   "result": {
     "count": 1,

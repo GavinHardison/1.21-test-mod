@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "E": {
+    "P": {
       "item": "jakobitestmod:potash_block"
     }
   },
   "pattern": [
-    "EE",
-    "EE"
+    "PP",
+    "PP"
   ],
   "result": {
     "count": 4,

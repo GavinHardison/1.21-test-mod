@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": {
+      "item": "jakobitestmod:ash_planks"
+    }
+  },
+  "pattern": [
+    "AA",
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "jakobitestmod:ash_door"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": {
+      "item": "jakobitestmod:ash_planks"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "SAS",
+    "SAS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "jakobitestmod:ash_fence_gate"
+  }
+}

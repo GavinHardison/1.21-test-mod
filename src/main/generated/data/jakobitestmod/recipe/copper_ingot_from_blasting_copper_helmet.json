@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "test_mod",
+  "ingredient": {
+    "item": "jakobitestmod:copper_helmet"
+  },
+  "result": {
+    "id": "minecraft:copper_ingot"
+  }
+}
